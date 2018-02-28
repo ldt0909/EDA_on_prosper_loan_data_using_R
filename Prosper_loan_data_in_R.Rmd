@@ -1,0 +1,32 @@
+---
+title: "Prosper_Loan_Data"
+author: "Flora Li"
+date: "February 28, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r library}
+library(ggplot2)
+library(gridExtra)
+library(dplyr)
+library(reshape2)
+```
+```{r}
+pld <- read.csv('prosperLoanData.csv')
+```
+```{r}
+# dimensions of data
+dim(pld)
+```
+```{r}
+# variables in data
+names(pld)
+# data structure 
+str(pld)
+# print first 10 row
+head(pld,n=10)
+```
+
